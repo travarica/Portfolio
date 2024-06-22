@@ -1,0 +1,349 @@
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    /*background: url(12-129896_steven-universe-wallpaper-laptop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    */
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(55,29,126,1) 100%);
+}
+#main{
+    height: 100vh;
+}
+#projekti{
+    height: 100vh;
+}
+#usluge{
+    height: 100vh;
+}
+#navbar{
+    border-radius: 40px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px auto; /* Centriranje navigacijske trake */
+}
+#navbar ul {
+    display: flex;
+    list-style: none;
+    height: 50px;
+    
+
+}
+
+#navbar ul li{
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    
+}
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+#navbar ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px; /* Smanjite visinu za tanju liniju */
+    bottom: -1px; /* Pomaknite liniju dolje ako želite razmak između teksta i linije */
+    left: 0;
+    background-color: white;
+    transform-origin: right;
+    transition: transform 0.25s ease-out;
+}
+
+#navbar ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+#logo img{
+    width: 110px;
+    height: auto;
+    margin-left: 15px;
+    
+}
+#navbar button{
+    background-color: rgba(240, 248, 255, 0.149);
+    backdrop-filter: blur(5px);
+    border: 1px solid white ;
+    border-radius: 10px;
+    width: 125px;
+    height: 35px;
+    margin-right: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1px;
+    
+}
+
+#slika_ja{
+    position: absolute;
+    top: 61.5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 25%;
+    -webkit-mask-image: linear-gradient(#000, rgba(0,0,0,0));
+    mask-image: linear-gradient(#000, rgba(0,0,0,0));
+}
+#tekst1{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 110px;
+    color: white;
+    font-weight: 700;
+    margin-left: 2px;
+    letter-spacing: 2px;
+    text-shadow: 1px 3px 2px rgba(119, 0, 255, 0.3);
+    
+    
+}
+#tekst2{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 140px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-top: -50px;
+    text-shadow: 1px 3px 2px rgba(119, 0, 255, 0.3);
+}
+#skup1{
+    position: absolute;
+    top: 60%;
+    left: 15%;
+}
+#tekst3{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-top: -50px;
+    text-shadow: 1px 3px 2px rgba(119, 0, 255, 0.3);
+}
+#tekst4{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-top: -10px;
+    text-shadow: 1px 3px 2px rgba(119, 0, 255, 0.3);
+}
+#skup2{
+    position: absolute;
+    top: 93.5%;
+    left: 60%;
+}
+
+#oblik1{
+    width: 120%;
+    height: 40px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    
+   
+}
+#tekst5{
+    color: rgb(119, 0, 255);
+    font-weight: 600;
+    letter-spacing: 0px;
+    font-size: 14px;
+    position: relative;
+    left: 22%;
+}
+#oblik2{
+   width: 27.5px;
+   height: 27.5px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    position: relative;
+    right: 61.75%;
+    opacity: 20%;
+}
+#oblik3{
+    width: 12.5px;
+   height: 12.5px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    position: relative;
+    right: 68.5%;
+    opacity: 60%;
+}
+
+
+#skup3{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+}
+
+#tekst6{
+    word-spacing: 75px;
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 150px;
+    position: absolute;
+    top: 25%;
+    left: 50.5%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-shadow: 1px 3px 2px rgba(119, 0, 255, 0.3);
+    z-index: -1;
+}
+
+#tekst7{
+    position: absolute;
+    top: 50%;
+    left: 68%;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+    text-align: right;
+    text-shadow: 1px 3px 2px rgba(119, 0, 255, 0.3);
+}
+
+#tekst8{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 60px;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-shadow: 1px 3px 2px rgba(119, 0, 255, 0.3);;
+}
+
+#slika1{
+    width: 40%;
+    position: absolute;
+    left:9.5%;
+    top: 140%;
+    border-radius: 10px;
+}
+
+#tekst9{
+    background-color: rgba(240, 248, 255, 0.149);
+    backdrop-filter: blur(5px);
+    border: 1px solid white ;
+    border-radius: 50px;
+    color: white;
+    font-size: 14px;
+    padding: 7.5px 12.5px 7.5px;
+    position: absolute;
+    left: 41.5%;
+    top: 197.5%;
+    cursor: pointer;
+}
+
+#skup4{
+    position: absolute;
+    left: 9.5%;
+    top: 197.5%;
+    color: white;
+}
+#tekst10{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+#tekst11{
+    opacity: 0.7;
+    font-size: 13px;
+}
+
+#slika2{
+    width: 40%;
+    position: absolute;
+    left:50.5%;
+    top: 140%;
+    border-radius: 10px;
+}
+
+#tekst12{
+    background-color: rgba(240, 248, 255, 0.149);
+    backdrop-filter: blur(5px);
+    border: 1px solid white ;
+    border-radius: 50px;
+    color: white;
+    font-size: 14px;
+    padding: 7.5px 12.5px 7.5px;
+    position: absolute;
+    left: 82.5%;
+    top: 197.5%;
+    cursor: pointer;
+}
+#skup5{
+    position: absolute;
+    left: 50.5%;
+    top: 197.5%;
+    color: white;
+}
+
+#oblik4{
+    position: absolute;
+    top: 145%;
+    background-color: white;
+    filter: blur(200px);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+   
+}
+#oblik5{
+  position: absolute;
+  top: 155%;
+  left: 85%;
+    background-color: white;
+    filter: blur(180px);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+
+::-webkit-scrollbar{
+    width: 0px;
+}
